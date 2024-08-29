@@ -1,0 +1,117 @@
+.feedbackArea__row {
+  position: relative;
+  width: 100%;
+  padding-bottom: 38%;
+  overflow: hidden;
+}
+
+.feedbackArea__row__buttonBlock {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.feedbackArea__row__buttonBlock__btn {
+  height: 20px;
+  width: 20px;
+  border: none;
+  background: linear-gradient(135deg, #eeeeee 0%, #dfdfdf 50%, #eeeeee 100%);
+  cursor: pointer;
+}
+
+.activeBtn {
+  background: linear-gradient(135deg, #00a5fb 0%, #0093df 50%, #00a8ff 100%);
+}
+
+.feedbackArea__row__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 300%;
+  padding: 1.82% 1% 5% 1%;
+  transition: left 1s linear;
+}
+
+.feedbackArea__row__container__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 10.25%;
+  background: #f9f9ff;
+  padding: 0.91%;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+}
+
+.feedbackArea__row__container__item:hover {
+  box-shadow: 0 8px 20px rgb(153 153 153 / 20%);
+  background-color: white;
+}
+
+.feedbackArea__row__container__item:hover .feedbackArea__row__container__item__title {
+  color: #0093df;
+}
+
+.feedbackArea__row__container__item img {
+  width: 23.5%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.feedbackArea__row__container__item p {
+  text-align: justify;
+  margin: 9.75% 0 9.75% 0;
+  font-weight: 400;
+}
+
+.feedbackArea__row__container__item__title {
+  font-size: 1.29em;
+  color: #222222;
+  margin: 0;
+  transition: all 0.3s linear;
+}
+
+.feedbackArea__row__container__item__subtitle {
+  font-size: 1em;
+  margin: 0;
+  font-weight: 400;
+}
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+  .feedbackArea__row {
+    padding-bottom: 110%;
+  }
+
+  .feedbackArea__row__container__item {
+    width: 11.11%;
+  }
+
+  .feedbackArea__row__container__item p {
+    font-size: 3em;
+    line-height: 1.625em;
+  }
+
+  .feedbackArea__row__container__item__title {
+    font-size: 3.825em;
+    line-height: 1.625em;
+  }
+
+  .feedbackArea__row__container__item__subtitle {
+    font-size: 3em;
+    line-height: 1.625em;
+  }
+
+  .feedbackArea__row__buttonBlock {
+    width: 100%;
+  }
+}

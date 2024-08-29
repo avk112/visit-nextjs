@@ -1,0 +1,93 @@
+.bannerArea {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /*height: 800px;*/
+  background: url("../../../image/banner-bg.jpg") no-repeat;
+  background-size: cover;
+  padding: 55px 9% 4% 9%;
+  box-sizing: border-box;
+}
+
+.bannerArea__imgBlock {
+  position: relative;
+  display: flex;
+  width: 48%;
+  box-sizing: border-box;
+  padding-left: 7%;
+}
+
+.bannerArea__imgBlock img {
+  width: 94%;
+  object-fit: cover;
+}
+
+.bannerArea__descriptionBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 52%;
+  padding: 7% 0;
+}
+
+.bannerArea__descriptionBlock__h1 {
+  width: 75%;
+  font-size: 4.286em;
+  margin: 0;
+  line-height: 1.2em;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.bannerArea__descriptionBlock__h1 span {
+  color: #0093df;
+}
+
+.bannerArea__descriptionBlock__btn {
+  width: 30%;
+  padding: 2% 2%;
+  background: #0093df;
+  font-size: 0.928em;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  box-shadow: -10px 10px 20px rgb(0 0 0 / 10%);
+  font-family: "Roboto", sans-serif;
+  transition: all 0.3s linear;
+}
+
+.bannerArea__descriptionBlock__btn:hover {
+  background-color: white;
+  color: #0093df;
+}
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+  .bannerArea {
+    padding: 28% 9% 4% 9%;
+  }
+
+  .bannerArea__imgBlock {
+    width: 59%;
+    box-sizing: border-box;
+    padding-left: 0%;
+  }
+
+  .bannerArea__descriptionBlock__h1 {
+    width: 100%;
+    font-size: 6em;
+    margin: 0 0 6% 0;
+    line-height: 1.2em;
+  }
+
+  .bannerArea__descriptionBlock__btn {
+    width: 80%;
+    padding: 8% 4%;
+    font-size: 3em;
+  }
+}

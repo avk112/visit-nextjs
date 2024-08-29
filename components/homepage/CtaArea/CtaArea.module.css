@@ -1,0 +1,49 @@
+.ctaArea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  background: url("../../../image/cta-bg.jpg") center;
+  background-size: cover;
+  padding: 9% 9% 21.5% 9%;
+}
+
+.ctaArea img {
+  position: absolute;
+  bottom: -6%;
+  left: 50%;
+  transform: translate(-50%);
+  object-fit: cover;
+  width: 75%;
+}
+
+.ctaArea button {
+  width: 16%;
+  background: #0093df;
+  line-height: 3em;
+  border: none;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  box-shadow: -10px 10px 20px rgb(0 0 0 / 10%);
+}
+
+.ctaArea button:hover {
+  color: #0093df;
+  background: white;
+}
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+  .ctaArea button {
+    width: 38%;
+    font-size: 3em;
+  }
+}

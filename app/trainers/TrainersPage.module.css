@@ -1,0 +1,126 @@
+.trainersPage__row {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(4, minmax(23%, 1fr));
+  grid-auto-flow: dense;
+}
+
+.trainersPage__row__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.trainersPage__row__item__rotationBlock {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.trainersPage__row__item:hover .trainersPage__row__item__rotationBlock img {
+  transform: rotate3d(0, 1, 0, 180deg);
+  z-index: 0;
+}
+
+.trainersPage__row__item:hover .trainersPage__row__item__rotationBlock__background {
+  transform: rotate3d(0, 0, 0, 180deg);
+  width: 100%;
+  height: 101%;
+  left: 0;
+}
+
+.trainersPage__row__item__rotationBlock__background {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  left: 1%;
+  text-align: justify;
+  background-color: #0093df;
+  z-index: 5;
+  transform: rotate3d(0, 1, 0, 180deg);
+  transition: all 0.3s linear;
+  color: white;
+  padding: 7%;
+  box-sizing: border-box;
+}
+
+.trainersPage__row__item__rotationBlock__background__title {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin: 0 0 7% 0;
+}
+
+.trainersPage__row__item__rotationBlock__background p {
+  font-size: 1em;
+  line-height: 1.3em;
+  margin: 0;
+}
+
+.trainersPage__row__item__rotationBlock img {
+  width: 100%;
+  object-fit: cover;
+  z-index: 10;
+  transition: all 0.3s linear;
+}
+
+.trainersPage__row__item__title {
+  font-size: 1.29em;
+  line-height: 1.2em;
+  color: #222222;
+  font-weight: 600;
+  margin: 11.8% 0 0 0;
+}
+
+.trainersPage__row__item__subtitle {
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 500;
+  margin: 0;
+}
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+  .trainersPage__row {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 7em;
+  }
+
+  .trainersPage__row__item {
+    width: 100%;
+  }
+
+  .trainersPage__row__item__rotationBlock__background {
+    padding: 7%;
+  }
+
+  .trainersPage__row__item__rotationBlock__background__title {
+    font-size: 4.7em;
+    line-height: 1.2em;
+  }
+
+  .trainersPage__row__item__rotationBlock__background p {
+    font-size: 4.5em;
+    line-height: 1.425em;
+  }
+
+  .trainersPage__row__item__title {
+    font-size: 3.825em;
+    margin: 5% 0 0 0;
+    color: #0093df;
+  }
+
+  .trainersPage__row__item__subtitle {
+    font-size: 3em;
+    line-height: 1.2em;
+    margin: 0;
+  }
+}

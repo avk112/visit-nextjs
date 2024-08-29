@@ -1,0 +1,119 @@
+.blogArea {
+  width: 100%;
+}
+
+.blogArea__row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.blogArea__row a {
+  text-decoration: none;
+  color: inherit;
+  width: auto;
+  margin: 0;
+}
+
+.blogArea__row__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 31.6%;
+  box-sizing: border-box;
+}
+
+.blogArea__row__item:hover img {
+  transform: scale(1.2);
+}
+
+.blogArea__row__item:hover .blogArea__row__item__title {
+  color: #0093df;
+}
+
+.blogArea__row__item__imgContainer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blogArea__row__item__imgContainer img {
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s linear;
+}
+
+.blogArea__row__item__title {
+  font-size: 1.29em;
+  font-weight: 600;
+  color: #222222;
+  line-height: 1.2em;
+  margin: 11.5% 0 4.6% 0;
+  transition: all 0.3s linear;
+}
+
+.blogArea__row__item p {
+  text-align: justify;
+  font-weight: 400;
+  line-height: 1.625em;
+  margin: 0 0 10% 0;
+}
+
+.blogArea__row__item__infoBlock {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+}
+
+.blogArea__row__item__infoBlock__section {
+  display: flex;
+  align-items: flex-start;
+  font-weight: 400;
+}
+
+.blogArea__row__item__infoBlock__section img {
+  padding-right: 0.4em;
+  width: 1.2em;
+}
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+  .blogArea__row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blogArea__row__item {
+    width: 100%;
+    padding: 0 0 12% 0;
+  }
+
+  .blogArea__row__item__title {
+    font-size: 3.825em;
+    line-height: 1.2em;
+    margin: 5.5% 0 2.6% 0;
+    color: #0093df;
+  }
+
+  .blogArea__row__item p {
+    font-size: 3em;
+    line-height: 1.625em;
+    margin: 0 0 5% 0;
+  }
+
+  .blogArea__row__item__infoBlock {
+    width: 55%;
+  }
+
+  .blogArea__row__item__infoBlock__section {
+    font-size: 3em;
+    line-height: 1.25em;
+  }
+}

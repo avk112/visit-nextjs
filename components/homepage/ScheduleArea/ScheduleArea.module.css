@@ -1,0 +1,74 @@
+.scheduleArea {
+  position: relative;
+  background: #f9f9ff;
+}
+
+.scheduleArea img {
+  position: absolute;
+  right: 0;
+  top: 33%;
+  z-index: 5;
+  object-fit: cover;
+  width: 64.7%;
+}
+
+.scheduleArea__table {
+  position: relative;
+  width: 83%;
+  text-align: center;
+  border: 1px solid #dee2e6;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.625em;
+  z-index: 10;
+}
+
+.scheduleArea__table thead {
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #222222;
+}
+
+.scheduleArea__table thead th {
+  padding: 1.31%;
+}
+
+.scheduleArea__table tbody tr {
+  line-height: 3.9em;
+  transition: all 0.3s linear;
+}
+
+.scheduleArea__table tbody tr:hover {
+  background-color: white;
+}
+
+.scheduleArea__table tbody th {
+  border: 1px solid #dee2e6;
+}
+
+.scheduleArea__table tbody td {
+  width: 14.3%;
+  padding: 1.31%;
+  border: 1px solid #dee2e6;
+}
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+  .scheduleArea__table {
+    width: 100%;
+    font-size: 2.5em;
+    line-height: 1.2em;
+  }
+
+  .scheduleArea img {
+    right: 0;
+    top: 40%;
+    z-index: 5;
+    object-fit: cover;
+    width: 100%;
+  }
+}
